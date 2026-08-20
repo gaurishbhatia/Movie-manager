@@ -1,0 +1,19 @@
+{
+  "name": "CineList",
+  "short_name": "CineList",
+  "description": "A minimal movie watchlist — track English and Hindi movies.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#0d0d0d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./icon-512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["entertainment", "utilities"]
+}

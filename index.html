@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta name="description" content="CineList — a minimal movie watchlist. Track English and Hindi movies you want to watch.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CineList">
+
+  <title>cinelist_ — movie watchlist</title>
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/jpeg" href="./icon-512.jpg">
+  <link rel="apple-touch-icon" href="./icon-512.jpg">
+
+  <!-- Google Fonts: JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="app-header">
+    <h1 class="app-title">cinelist<span class="underscore">_</span></h1>
+  </header>
+
+  <!-- Dual Columns -->
+  <main id="columns-container">
+    <section id="col-english" class="movie-column" aria-label="English movies"></section>
+    <section id="col-hindi" class="movie-column" aria-label="Hindi movies"></section>
+  </main>
+
+  <!-- FAB -->
+  <button id="fab" aria-label="Add movie">+</button>
+
+  <!-- Modal Backdrop -->
+  <div id="modal-backdrop" aria-hidden="true"></div>
+
+  <!-- Add Movie Modal -->
+  <div id="add-modal" role="dialog" aria-label="Add a movie" aria-modal="true">
+    <div class="modal-handle"></div>
+    <p class="modal-title">add movie_</p>
+
+    <input
+      type="text"
+      id="movie-title-input"
+      placeholder="movie name..."
+      autocomplete="off"
+      spellcheck="false"
+      aria-label="Movie title"
+    >
+
+    <div class="lang-toggle">
+      <button class="lang-btn english selected" data-lang="english" aria-label="Select English">english</button>
+      <button class="lang-btn hindi" data-lang="hindi" aria-label="Select Hindi">hindi</button>
+    </div>
+
+    <button id="modal-submit" disabled aria-label="Add movie to list">add_</button>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

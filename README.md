@@ -2,8 +2,11 @@
 
 A minimal, offline-capable Progressive Web App (PWA) for managing movie watchlists classified by language (English & Hindi), styled with a Monkeytype-inspired **Spiderman dark monospace** aesthetic.
 
-![Theme](https://img.shields.io/badge/theme-spiderman%20dark-e63946)
-![PWA](https://img.shields.io/badge/pwa-offline%20ready-4e9af1)
+[![Live Demo](https://img.shields.io/badge/live%20demo-gaurish--cinelist.netlify.app-e63946?style=for-the-badge&logo=netlify)](https://gaurish-cinelist.netlify.app/)
+[![Theme](https://img.shields.io/badge/theme-spiderman%20dark-141414?style=for-the-badge)](https://gaurish-cinelist.netlify.app/)
+[![PWA Ready](https://img.shields.io/badge/pwa-offline%20ready-4e9af1?style=for-the-badge)](https://gaurish-cinelist.netlify.app/)
+
+🔗 **Live App:** [https://gaurish-cinelist.netlify.app/](https://gaurish-cinelist.netlify.app/)
 
 ---
 
@@ -29,7 +32,16 @@ A minimal, offline-capable Progressive Web App (PWA) for managing movie watchlis
 
 ---
 
-## 🚀 Getting Started Locally
+## 📱 How to Install on Mobile (PWA)
+
+1. Open [https://gaurish-cinelist.netlify.app/](https://gaurish-cinelist.netlify.app/) in Chrome on Android (or Safari on iOS).
+2. Tap the browser menu (**⋮** on Android / **Share** button on iOS).
+3. Select **"Add to Home Screen"** or **"Install App"**.
+4. Launch it directly from your home screen with full offline support.
+
+---
+
+## 🚀 Running Locally
 
 Open `index.html` directly in your browser or run any static server:
 
@@ -40,12 +52,3 @@ npx http-server . -p 3000
 # Or Python
 python -m http.server 3000
 ```
-
----
-
-## 📱 Deploying to GitHub Pages
-
-1. Push this repository to GitHub.
-2. Go to **Settings** > **Pages**.
-3. Under **Build and deployment** > **Source**, select `Deploy from a branch` and choose `main` / `(root)`.
-4. Your PWA will be live at `https://<username>.github.io/<repo-name>/`.
